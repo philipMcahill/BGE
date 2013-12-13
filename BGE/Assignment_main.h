@@ -64,7 +64,8 @@ namespace BGE
 		float what;
 		float x;
 		float y;
-		float z;
+		float nunParticals;
+		
 
 		shared_ptr<FountainEffect> magicsparkle;
 		shared_ptr<FountainEffect> magicBox;

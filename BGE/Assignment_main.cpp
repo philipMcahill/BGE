@@ -39,6 +39,9 @@ std::shared_ptr<GameComponent> station;
 
 bool Assignment_main::Initialise() 
 {
+
+	int j = 0;
+
 	// Set up the collision configuration and dispatcher
     collisionConfiguration = new btDefaultCollisionConfiguration();
     dispatcher = new btCollisionDispatcher(collisionConfiguration);
@@ -57,11 +60,14 @@ bool Assignment_main::Initialise()
 	physicsFactory->CreateCameraPhysics();
 	
 
+
 	//sparkle on end of wand
-	magicsparkle = make_shared<FountainEffect>(10);
+	magicsparkle = make_shared<FountainEffect>(nunParticals);
 	magicsparkle->position = glm::vec3(-30, 0, 0);
-	magicsparkle->diffuse = glm::vec3(0,5, 10);
+	magicsparkle->diffuse = glm::vec3(0,0, 10);
 	Attach(magicsparkle);
+
+
 
 	/*magicBox = make_shared<FountainEffect>(0);
 	magicBox->position = glm::vec3(0, 0, 0);
@@ -75,22 +81,65 @@ bool Assignment_main::Initialise()
 
 	for (int i = 0 ; i < num_enmies ; i ++)
 	{
+
+	
+
 		fountainTheta = ((glm::pi<float>() * 2.0f) / num_enmies) * i;
-		shared_ptr<PhysicsController> box4 = physicsFactory->CreateBox(1,1,1, glm::vec3(glm::sin(fountainTheta) * RADIUS, HEIGHT,
-		- glm::cos(fountainTheta) * RADIUS), glm::quat());
-		std::shared_ptr<VectorDrawer> vectorDrawer = make_shared<VectorDrawer>();
-		vectorDrawer->scale = glm::vec3(5,5,10);
-		box4->Attach(vectorDrawer);
-		box4->Attach(magicsparkle);
+			shared_ptr<PhysicsController> box4 = physicsFactory->CreateBox(1,1,1, glm::vec3(glm::sin(fountainTheta) * RADIUS, HEIGHT,
+			- glm::cos(fountainTheta) * RADIUS), glm::quat());
+
+			
+			
+
+		if (i % 2 == 0)
+		{
+			
+				if (j % 2 == 0)
+				{	
+
+					magicsparkle = make_shared<FountainEffect>(100);
+					magicsparkle->position = glm::vec3(-30, 0, 0);
+					magicsparkle->diffuse = glm::vec3(0,0, 10);
+
+					Attach(magicsparkle);		
+
+
+					magicsparkle->Attach(box4);
+
+				}
+				else
+				
+				{
+
+					magicsparkle = make_shared<FountainEffect>(100);
+					magicsparkle->position = glm::vec3(-30, 0, 0);
+					magicsparkle->diffuse = glm::vec3(0,1, 0);
+
+					Attach(magicsparkle);		
+
+
+					magicsparkle->Attach(box4);
+
+				}
+				j++;
+
+
+		}
 		
 	}
 	fountainTheta = 0.0f;
 
 	
+		
+	//shared_ptr<PhysicsController> box1 = physicsFactory->CreateBox(1,1,4, glm::vec3(5, 5, 0), glm::quat());
 
+	//std::shared_ptr<VectorDrawer> vectorDrawer= make_shared<VectorDrawer>();
+	//vectorDrawer->scale = glm::vec3(5,5,10);
+	//magicsparkle->Attach(vectorDrawer);
+
+	//magicsparkle->Attach(box1);
 	
-
-
+	
 
 
 	
@@ -109,6 +158,7 @@ void BGE::Assignment_main::Update(float timeDelta)
 	//magicsparkle -> position = camera->position + camera->look;
 
 	
+
 	
 
 

@@ -4,6 +4,7 @@
 #include <btBulletDynamicsCommon.h>
 #include "PhysicsFactory.h"
 #include "FountainEffect.h"
+#include "Assignment_main.h"
 
 namespace BGE
 {

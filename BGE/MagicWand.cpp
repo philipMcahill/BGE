@@ -6,6 +6,7 @@
 #include <sstream>
 #include "Utils.h"
 #include "FountainEffect.h"
+#include "Assignment_main.h"
 using namespace BGE;
 
 
@@ -114,6 +115,10 @@ void MagicWand::Update(float timeDelta)
 			//touching->Fly(powerfactor);
 			touching->rigidBody->setGravity(GLToBtVector(v));
 			touching->rigidBody->activate();
+
+			//Assignment_main.
+
+			
 
 			what = touching->tag;
 
