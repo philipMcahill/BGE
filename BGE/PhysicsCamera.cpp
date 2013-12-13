@@ -43,7 +43,7 @@ void PhysicsCamera::Update(float timeDelta)
 	float moveSpeed = speed;
 	float timeToPass = 1.0f / fireRate;
 
-	if ((keyState[SDL_SCANCODE_SPACE]) && (elapsed > timeToPass))
+	/*if ((keyState[SDL_SCANCODE_SPACE]) && (elapsed > timeToPass))
 	{
 		glm::vec3 pos = parent->position + (parent->look * 5.0f);
 		glm::quat q(RandomFloat(), RandomFloat(), RandomFloat(), RandomFloat());
@@ -57,8 +57,9 @@ void PhysicsCamera::Update(float timeDelta)
 	else
 	{
 		elapsed += timeDelta;
-	}
+	}*/
 	string what = "Nothing";
+
 	// Handle the gravity gun
 	if (SDL_GetMouseState(NULL, NULL) && SDL_BUTTON(3))
 	{
@@ -89,17 +90,17 @@ void PhysicsCamera::Update(float timeDelta)
             // Calculate the hold point in front of the camera
 			glm::vec3 holdPos = parent->position + (parent->look * holdDist);
 
-            glm::vec3 v = holdPos - pickedUp->position; // direction to move the Target
-            v *= powerfactor; // powerfactor of the GravityGun
+            //glm::vec3 v = holdPos - pickedUp->position; // direction to move the Target
+            //v *= powerfactor; // powerfactor of the GravityGun
 
-            if (v.length() > maxVel)
-            {
-                // if the correction-velocity is bigger than maximum
-				v = glm::normalize(v);
-                v *= maxVel; // just set correction-velocity to the maximum
-            }
-			pickedUp->rigidBody->setLinearVelocity(GLToBtVector(v));    
-			pickedUp->rigidBody->activate();		
+    //        if (v.length() > maxVel)
+    //        {
+    //            // if the correction-velocity is bigger than maximum
+				//v = glm::normalize(v);
+    //            v *= maxVel; // just set correction-velocity to the maximum
+    //        }
+			//pickedUp->rigidBody->setLinearVelocity(GLToBtVector(v));    
+			//pickedUp->rigidBody->activate();		
 			what = pickedUp->tag;	
 		}
 	}

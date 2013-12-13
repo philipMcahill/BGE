@@ -1,6 +1,7 @@
 #pragma once
 #include "GameComponent.h"
 
+
 namespace BGE {
 	class Camera:public GameComponent {
 	public:

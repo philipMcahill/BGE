@@ -2,6 +2,7 @@
 #include "Game.h"
 #include "GameComponent.h"
 #include "FountainEffect.h"
+#include "Camera.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ namespace BGE
 		glm::quat fromQuaternion;
 		glm::quat toQuaternion;
 		float t;
+		glm::mat4 view;
 	};
 }
 

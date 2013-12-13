@@ -66,8 +66,10 @@ namespace BGE
 		bool alive;
 
 		void Strafe(float units); 
-		void Fly(float units);    
-		void Walk(float units);   		
+		void Fly(float units);
+		void FlyDown(float units);
+		void Walk(float units);   
+		void shoot(float units); 
 
 		void Pitch(float angle); // rotate on right vector
 		void Yaw(float angle);   // rotate on up vector

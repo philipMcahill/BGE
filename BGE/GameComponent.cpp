@@ -149,6 +149,12 @@ void GameComponent::Walk(float units)
 	moved = true;
 }
 
+void GameComponent::shoot(float units)
+{
+	position += look * units;
+	moved = true;
+}
+
 void GameComponent::Strafe(float units)
 {
 	position += right * units;
@@ -158,6 +164,12 @@ void GameComponent::Strafe(float units)
 void GameComponent::Fly(float units)
 {
 	position.y += units;
+	moved = true;
+}
+
+void GameComponent::FlyDown(float units)
+{
+	position.y -= units;
 	moved = true;
 }
 

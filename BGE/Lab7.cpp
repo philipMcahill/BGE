@@ -3,6 +3,7 @@
 #include "VectorDrawer.h"
 #include "LazerBeam.h"
 #include "FountainEffect.h"
+#include "Camera.h"
 
 using namespace BGE;
 
@@ -46,12 +47,19 @@ bool Lab7::Initialise()
 
 	Game::Initialise();
 
-	camera->GetController()->position = glm::vec3(0, 4, 20);
+	camera->GetController()->position = glm::vec3(10, 2, -10);
 	return true;
 }
 
 void Lab7::Update(float timeDelta)
 {	
+
+		//view = glm::lookAt(
+		//position
+		//, glm::vec3(0, 0, 1)
+		//, basisUp
+		//);
+
 	// Movement of ship2
 	if (keyState[SDL_SCANCODE_UP])
 	{
@@ -80,18 +88,22 @@ void Lab7::Update(float timeDelta)
 		ship2->Fly(-timeDelta * speed);
 	}
 
+
+
+
 	if (keyState[SDL_SCANCODE_SPACE] && ! slerping)
 	{
 		slerping = true;
 		fromQuaternion = ship1->orientation;
 
-		glm::vec3 toShip2 = ship2->position - ship1->position;
-		toShip2 = glm::normalize(toShip2);
-		glm::vec3 axis = glm::cross(GameComponent::basisLook, toShip2);
+		glm::vec3 toCamera = camera->position - ship1->position;
+		toCamera = glm::normalize(toCamera);
+		glm::vec3 axis = glm::cross(GameComponent::basisLook, toCamera);
 		axis = glm::normalize(axis);
-		float theta = glm::acos(glm::dot(toShip2, GameComponent::basisLook));
+		float theta = glm::acos(glm::dot(toCamera, GameComponent::basisLook));
 		toQuaternion = glm::angleAxis(glm::degrees(theta), axis);
 	}
+
 
 	if (slerping)
 	{
@@ -103,6 +115,31 @@ void Lab7::Update(float timeDelta)
 			slerping = false;
 		}
 	}
+
+	/*			if (keyState[SDL_SCANCODE_SPACE] && ! slerping)
+	{
+		slerping = true;
+		fromQuaternion = camera->orientation;
+
+		glm::vec3 toShip2 = ship2->position - camera->position;
+		toShip2 = glm::normalize(toShip2);
+		glm::vec3 axis = glm::cross(GameComponent::basisLook, toShip2);
+		axis = glm::normalize(axis);
+		float theta = glm::acos(glm::dot(toShip2, GameComponent::basisLook));
+		toQuaternion = glm::angleAxis(glm::degrees(theta), axis);
+	}
+
+	if (slerping)
+	{
+		camera->orientation = glm::mix(fromQuaternion, toQuaternion, t);
+		t += timeDelta;
+		if (t > 1.0f)
+		{
+			t = 0.0f;
+			slerping = false;
+		}
+	}*/
+	
 
 
 	// Put code for ship1 here!!!

@@ -27,6 +27,35 @@ bool Lab8::Initialise()
 	ship1->Attach(make_shared<VectorDrawer>());
 	Attach(ship1);
 
+	ship3 = make_shared<GameComponent>();
+	ship3->Attach(Content::LoadModel("cobramk1", glm::rotate(glm::mat4(1), 180.0f, glm::vec3(0,1,0))));
+	ship3->position = glm::vec3(-10, 2, -10);
+	ship3->Attach(make_shared<VectorDrawer>());
+	Attach(ship3);
+
+
+	
+		fountainTheta = 0.0f; 
+	for (int i = 0 ; i < NUM_FOUNTAINS ; i ++)
+	{
+		fountainTheta = ((glm::pi<float>() * 2.0f) / NUM_FOUNTAINS) * i;
+		shared_ptr<FountainEffect> fountain = make_shared<FountainEffect>(500);
+		if (i % 2 == 0)
+		{
+			fountain->diffuse = glm::vec3(1,0,0);
+		}
+		else
+		{
+			fountain->diffuse = glm::vec3(0,1,0);
+		}
+		
+		fountain->position.x =  glm::sin(fountainTheta) * FOUNTAIN_RADIUS;
+		fountain->position.y = - glm::cos(fountainTheta) / FOUNTAIN_RADIUS;
+		fountain->position.z = FOUNTAIN_HEIGHT;
+		fountains.push_back(fountain);
+		Attach(fountain);
+	}
+	fountainTheta = 0.0f;
 	
 	
 	riftEnabled = false;

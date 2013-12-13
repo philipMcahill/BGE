@@ -5,7 +5,6 @@ using namespace BGE;
 
 FountainEffect::FountainEffect(void):numParticles(1000)
 {
-	
 }
 
 FountainEffect::FountainEffect(int numParticles)
@@ -53,9 +52,9 @@ void FountainEffect::UpdateParticle(float timeDelta, Particle & p)
 	p.velocity += gravity * timeDelta;
 	p.position += p.velocity * timeDelta;
 
-	// Fade the alpha as we approach the ground
+	//// Fade the alpha as we approach the ground
 	float fadeHeight = 5;
-	
+	//
 	p.diffuse.a = glm::clamp<float>(p.position.y / fadeHeight, 0.0f, 1.0f);
 	if (p.position.y < 0)
 	{

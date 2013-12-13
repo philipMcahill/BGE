@@ -185,12 +185,6 @@
     <ClCompile Include="SnowEffect.cpp">
       <Filter>Particles</Filter>
     </ClCompile>
-    <ClCompile Include="Lab4.cpp">
-      <Filter>Labs</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab5.cpp">
-      <Filter>Labs</Filter>
-    </ClCompile>
     <ClCompile Include="Buddha.cpp">
       <Filter>Games</Filter>
     </ClCompile>
@@ -202,6 +196,21 @@
     </ClCompile>
     <ClCompile Include="Lab8.cpp">
       <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="FireFountain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicWand.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -352,12 +361,6 @@
     <ClInclude Include="SnowEffect.h">
       <Filter>Particles</Filter>
     </ClInclude>
-    <ClInclude Include="Lab4.h">
-      <Filter>Labs</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab5.h">
-      <Filter>Labs</Filter>
-    </ClInclude>
     <ClInclude Include="Buddha.h">
       <Filter>Games</Filter>
     </ClInclude>
@@ -370,6 +373,15 @@
     <ClInclude Include="Lab8.h">
       <Filter>Labs</Filter>
     </ClInclude>
+    <ClInclude Include="Lab4.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="FireFountain.h" />
+    <ClInclude Include="Assignment_main.h" />
+    <ClInclude Include="MagicWand.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\CubeShader.fragmentshader">
@@ -445,5 +457,6 @@
     <None Include="Content\Particles.vertexshader">
       <Filter>Content</Filter>
     </None>
+    <None Include="Class diagram.cd" />
   </ItemGroup>
 </Project>

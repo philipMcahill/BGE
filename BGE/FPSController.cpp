@@ -23,32 +23,32 @@ void FPSController::Update(float timeDelta)
 {
 	const Uint8 * keyState = Game::Instance()->GetKeyState();
 
-	float moveSpeed = speed;
+	//float moveSpeed = speed;
 
-	if (keyState[SDL_SCANCODE_LSHIFT])
-	{
-		moveSpeed *= 10.0f;
-	}
+	//if (keyState[SDL_SCANCODE_LSHIFT])
+	//{
+	//	moveSpeed *= 10.0f;
+	//}
 
-	if (keyState[SDL_SCANCODE_W])
-	{
-		Walk(moveSpeed * timeDelta);
-	}
+	//if (keyState[SDL_SCANCODE_W])
+	//{
+	//	Walk(moveSpeed * timeDelta);
+	//}
 
-	if (keyState[SDL_SCANCODE_S])
-	{
-		Walk(-moveSpeed * timeDelta);
-	}
+	//if (keyState[SDL_SCANCODE_S])
+	//{
+	//	Walk(-moveSpeed * timeDelta);
+	//}
 
-	if (keyState[SDL_SCANCODE_A])
-	{
-		Strafe(-moveSpeed * timeDelta);
-	}
+	//if (keyState[SDL_SCANCODE_A])
+	//{
+	//	Strafe(-moveSpeed * timeDelta);
+	//}
 
-	if (keyState[SDL_SCANCODE_D])
-	{
-		Strafe(moveSpeed * timeDelta);
-	}
+	//if (keyState[SDL_SCANCODE_D])
+	//{
+	//	Strafe(moveSpeed * timeDelta);
+	//}
 
 	int x, y;
 	int midX, midY;

@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BGE::LazerBeam" Collapsed="true">
+    <Position X="3.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>LazerBeam.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Route" Collapsed="true">
+    <Position X="8.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAEEIAAAAAASYQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Route.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Exception" Collapsed="true">
+    <Position X="75.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAACAAAAAAAAAAAAAAAAAAABAAABAAAAAAAA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Content" Collapsed="true">
+    <Position X="73.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAEAAACAAAAAIAAAIgAAEAgAAAAAEAAAIAAA=</HashCode>
+      <FileName>Content.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Game" Collapsed="true">
+    <Position X="24" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FGYRACgAgoAAC0yCQAQAAABAFAjBAAABQFACAEgEBAI=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::GameComponent" Collapsed="true">
+    <Position X="37.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQBMCAEEBAAiwXAACAAIAsCRIAAYQAAgARBAkBggAA=</HashCode>
+      <FileName>GameComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Ground" Collapsed="true">
+    <Position X="48.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACEgAAABEQAxQAQAAAABAABQkQABgAAADAAEAAECA=</HashCode>
+      <FileName>Ground.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::KinematicMotionState" Collapsed="true">
+    <Position X="77.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAACAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KinematicMotionState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::LineDrawer" Collapsed="true">
+    <Position X="79" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAAAAwCAIAAAJAAAIAhQAAAgQEAAAEAAAAA=</HashCode>
+      <FileName>LineDrawer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Model" Collapsed="true">
+    <Position X="66.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SYACEgAiABAQAxQACAAAABAQIAkQABggAAjAAABAEgA=</HashCode>
+      <FileName>Model.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Params" Collapsed="true">
+    <Position X="75.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAIACCAAAABAAAAAAAAEAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Params.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::PhysicsFactory" Collapsed="true">
+    <Position X="79" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAiGAAQgAAAIAEQAAAAAAAAAAAAAAACAAAAAABAAA=</HashCode>
+      <FileName>PhysicsFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::SoundSystem" Collapsed="true">
+    <Position X="73.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACACAQAAAACQAAhAAAAAAAAAAAAAECAAAAA=</HashCode>
+      <FileName>SoundSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::VectorDrawer" Collapsed="true">
+    <Position X="53.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAwAAAAAAAAIAIAIAEAAgAAAAAAAAAAA=</HashCode>
+      <FileName>VectorDrawer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Camera" Collapsed="true">
+    <Position X="57.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQCAAAAAAAAAwAAQAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::PhysicsCamera" Collapsed="true">
+    <Position X="51" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQCAAAAAgIAAAIAAAQAAAgAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>PhysicsCamera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Buddha" Collapsed="true">
+    <Position X="35.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAAAAQAAAARAAAAAAAAgIAAAIAAAAAAQAAA=</HashCode>
+      <FileName>Buddha.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::SceneGraphGame" Collapsed="true">
+    <Position X="10.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIACAAAAAQAQpAAAAAAIAAAEIACAAAAIAAAEABAAA=</HashCode>
+      <FileName>SceneGraphGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::SteeringGame" Collapsed="true">
+    <Position X="12.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAgAAABQAAAAQQAAAAABAAAAAAAAAAAgAAgIA=</HashCode>
+      <FileName>SteeringGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::CubeTest" Collapsed="true">
+    <Position X="15" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAwAAAAAgAAEAAAgAEAAAAAAAAEAAEAA=</HashCode>
+      <FileName>CubeTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::ModelTest" Collapsed="true">
+    <Position X="17.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAICAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>ModelTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::PhysicsGame1" Collapsed="true">
+    <Position X="21.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAAAQJEAAAAAIAAAAAACEAAAAIAAEABAAA=</HashCode>
+      <FileName>PhysicsGame1.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::TexturedCube" Collapsed="true">
+    <Position X="26.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEBAQAwAAAAAAAAAAAAgAAgAAAAAAAEEAEAA=</HashCode>
+      <FileName>TexturedCube.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::TriangleTest" Collapsed="true">
+    <Position X="30.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAwAAAAAAAAAAAAgAAAAAEAAAAAAAEAA=</HashCode>
+      <FileName>TriangleTest.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Box" Collapsed="true">
+    <Position X="69" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAAAAAAAYAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Box.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Cylinder" Collapsed="true">
+    <Position X="6" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Cylinder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Sphere" Collapsed="true">
+    <Position X="39.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Sphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::FPSController" Collapsed="true">
+    <Position X="46.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>FPSController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::PhysicsController" Collapsed="true">
+    <Position X="51" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASIAAAAAAAAAAQAAAAAAAAAAAAAAAAAIAAAAEAEBAA=</HashCode>
+      <FileName>PhysicsController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::RiftController" Collapsed="true">
+    <Position X="55.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIQAgyAAAAABgZECgEgIAAYBAAADEgJAA0AAAAAAIiA=</HashCode>
+      <FileName>RiftController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Steerable3DController" Collapsed="true">
+    <Position X="60" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIyAACQAAAAAAwAAAAAAAAABAAgAQQQEAAQAAAEIAAE=</HashCode>
+      <FileName>Steerable3DController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::SteeringController" Collapsed="true">
+    <Position X="62.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BoyIBQAAIAAAAQQAKCggAABwATBgCKTAQFAQAgIAAIQ=</HashCode>
+      <FileName>SteeringControler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::XBoxController" Collapsed="true">
+    <Position X="71.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQACBAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XBoxController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::FlockingScenario" Collapsed="true">
+    <Position X="0.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAgAQAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FlockingScenario.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::ObstacleAvoidanceScenario" Collapsed="true">
+    <Position X="3" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAQAAAAAAgAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ObstacleAvoidanceScenario.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::PathFollowingScenario" Collapsed="true">
+    <Position X="5.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAgASAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PathFollowingScenario.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Scenario" Collapsed="true">
+    <Position X="3" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAiAQAAAAAAAAABAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Scenario.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::AttackingState" Collapsed="true">
+    <Position X="0.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIgAAAAAAAAAAAAAAAEQBAAIAAAAAAAAAI=</HashCode>
+      <FileName>AttackingState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::IdleState" Collapsed="true">
+    <Position X="2.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAgAAAAAAAAgAAAAAAEAAAAIAAEBAAAAAI=</HashCode>
+      <FileName>IdleState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::StateMachine" Collapsed="true">
+    <Position X="64.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAIAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>State.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::State" Collapsed="true">
+    <Position X="1.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAggAAAAAAAAAAAAAAEAAAAIAAABBAAAAA=</HashCode>
+      <FileName>State.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::FountainEffect" Collapsed="true">
+    <Position X="42" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAgAAAQAAA=</HashCode>
+      <FileName>FountainEffect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::ParticleEffect" Collapsed="true">
+    <Position X="43.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIQCEABABBAAAwCAIAgAAAAAMAgQAVAAAAAgAAAAEAA=</HashCode>
+      <FileName>ParticleEffect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::SnowEffect" Collapsed="true">
+    <Position X="44.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAUAAAAAAAAAAAAAAAQAAAAAgAAAAAAA=</HashCode>
+      <FileName>SnowEffect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Lab4" Collapsed="true">
+    <Position X="19.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAAAQAAAgQAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lab4.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Lab5" Collapsed="true">
+    <Position X="24" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAABAAAAQAAAgRAAAAAAQAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Lab5.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Lab6" Collapsed="true">
+    <Position X="28.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAEAAAAQAAAARAAAABCAAgAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Lab6.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Lab7" Collapsed="true">
+    <Position X="33" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABgAABQAAAgQAAAAABAABABAAAAQAAAAAAAA=</HashCode>
+      <FileName>Lab7.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGE::Lab8" Collapsed="true">
+    <Position X="37.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIwAAAAABAAAAQAAAARAACAAAAAAQAAAAAAAAAAQABA=</HashCode>
+      <FileName>Lab8.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotionState" Collapsed="true">
+    <Position X="73.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MotionState.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Particle" Collapsed="true">
+    <Position X="77.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAASAAAAIAAIAIABAAAAAAAAAQAAABAAAA=</HashCode>
+      <FileName>Particle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="BGE::Material" Collapsed="true">
+    <Position X="79" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BGE::RayGeom" Collapsed="true">
+    <Position X="77.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BGE::SphereGeom" Collapsed="true">
+    <Position X="73.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BGE::LightSource" Collapsed="true">
+    <Position X="77.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAACAAAAAAAAAAAIAIAAAAAAAAAAAAAAABQAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BGE::PrintMessage" Collapsed="true">
+    <Position X="75.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAACA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BGE::BoundingBox" Collapsed="true">
+    <Position X="77.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BGE::SoundEvent" Collapsed="true">
+    <Position X="79" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>SoundSystem.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_wdirent" Collapsed="true">
+    <Position X="75.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgQAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAEA=</HashCode>
+      <FileName>dirent.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_WDIR" Collapsed="true">
+    <Position X="73.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAACAAAAACAAAAAAAAAAAAAAAAAAAAASAAAAAAA=</HashCode>
+      <FileName>dirent.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="dirent" Collapsed="true">
+    <Position X="73.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgQAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAEA=</HashCode>
+      <FileName>dirent.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="DIR" Collapsed="true">
+    <Position X="79" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dirent.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="FBO" Collapsed="true">
+    <Position X="75.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAgAIAAAAgA=</HashCode>
+      <FileName>FBO.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ObstacleParam" Collapsed="true">
+    <Position X="73.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>ObstacleAvoidanceScenario.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

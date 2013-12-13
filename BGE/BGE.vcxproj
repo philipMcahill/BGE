@@ -81,8 +81,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Assignment_main.cpp" />
     <ClCompile Include="AttackingState.cpp" />
     <ClCompile Include="Buddha.cpp" />
+    <ClCompile Include="FireFountain.cpp" />
     <ClCompile Include="FlockingScenario.cpp" />
     <ClCompile Include="FountainEffect.cpp" />
     <ClCompile Include="IdleState.cpp" />
@@ -92,6 +94,7 @@
     <ClCompile Include="Lab7.cpp" />
     <ClCompile Include="Lab8.cpp" />
     <ClCompile Include="LazerBeam.cpp" />
+    <ClCompile Include="MagicWand.cpp" />
     <ClCompile Include="ObstacleAvoidanceScenario.cpp" />
     <ClCompile Include="Particle.cpp" />
     <ClCompile Include="ParticleEffect.cpp" />
@@ -137,8 +140,10 @@
     <ClCompile Include="XBoxController.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Assignment_main.h" />
     <ClInclude Include="AttackingState.h" />
     <ClInclude Include="Buddha.h" />
+    <ClInclude Include="FireFountain.h" />
     <ClInclude Include="FlockingScenario.h" />
     <ClInclude Include="FountainEffect.h" />
     <ClInclude Include="IdleState.h" />
@@ -148,6 +153,7 @@
     <ClInclude Include="Lab7.h" />
     <ClInclude Include="Lab8.h" />
     <ClInclude Include="LazerBeam.h" />
+    <ClInclude Include="MagicWand.h" />
     <ClInclude Include="ObstacleAvoidanceScenario.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="ParticleEffect.h" />
@@ -194,6 +200,7 @@
     <ClInclude Include="XBoxController.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Class diagram.cd" />
     <None Include="Classes.cd" />
     <None Include="Content\CubeShader.fragmentshader" />
     <None Include="Content\CubeShader.vertexshader" />

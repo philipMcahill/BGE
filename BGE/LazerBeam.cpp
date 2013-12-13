@@ -27,6 +27,7 @@ void LazerBeam::Update( float timeDelta )
 void BGE::LazerBeam::Draw()
 {
 	LineDrawer::DrawLine(position, position + look * 10.0f, glm::vec3(1,0,0));
+	
 }
 
 

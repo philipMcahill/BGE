@@ -2,8 +2,9 @@
 #include "Game.h"
 #include "GameComponent.h"
 #include "FountainEffect.h"
+#include "Camera.h"
 
-#define NUM_FOUNTAINS 20
+#define NUM_FOUNTAINS 1
 #define FOUNTAIN_RADIUS 100.0f
 #define FOUNTAIN_HEIGHT 10.0f
 
@@ -26,6 +27,7 @@ namespace BGE
 		bool Initialise();
 		void Update(float timeDelta);
 		vector<shared_ptr<FountainEffect>> fountains;
+		glm::mat4 view;
 		float fountainTheta;
 	};
 }

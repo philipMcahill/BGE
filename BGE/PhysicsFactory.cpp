@@ -9,6 +9,7 @@
 #include "Model.h"
 #include "dirent.h"
 #include "Utils.h"
+#include "MagicWand.h"
 using namespace BGE;
 
 PhysicsFactory::PhysicsFactory(btDiscreteDynamicsWorld * dynamicsWorld)
@@ -166,27 +167,49 @@ shared_ptr<PhysicsController> PhysicsFactory::CreateCylinder(float radius, float
 	return component;
 }
 
+//shared_ptr<PhysicsController> PhysicsFactory::CreateCameraPhysics()
+//{
+//	btVector3 inertia;
+//	// Now add physics to the camera
+//	btCollisionShape * cameraCyl = new btCylinderShape(btVector3(0.5f, 5.0f, 2.5f));
+//	cameraCyl->calculateLocalInertia(1, inertia);
+//	shared_ptr<PhysicsCamera> physicsCamera = make_shared<PhysicsCamera>(this);
+//
+//	shared_ptr<Camera> camera = Game::Instance()->camera;
+//	camera->Attach(physicsCamera);
+//
+//	btRigidBody::btRigidBodyConstructionInfo cameraCI(10,physicsCamera.get(), cameraCyl, inertia);  
+//	btRigidBody * body = new btRigidBody(cameraCI);
+//	physicsCamera->SetPhysicsStuff(cameraCyl, body, physicsCamera.get());
+//	body->setCollisionFlags(body->getCollisionFlags() | btCollisionObject::CF_KINEMATIC_OBJECT);
+//	body->setActivationState(DISABLE_DEACTIVATION);
+//
+//	dynamicsWorld->addRigidBody(body);
+//	return physicsCamera;
+//}
+
+
+//putting magic wand here. don't mind me
 shared_ptr<PhysicsController> PhysicsFactory::CreateCameraPhysics()
 {
 	btVector3 inertia;
 	// Now add physics to the camera
 	btCollisionShape * cameraCyl = new btCylinderShape(btVector3(0.5f, 5.0f, 2.5f));
 	cameraCyl->calculateLocalInertia(1, inertia);
-	shared_ptr<PhysicsCamera> physicsCamera = make_shared<PhysicsCamera>(this);
+	shared_ptr<MagicWand> magicWand = make_shared<MagicWand>(this);
 
 	shared_ptr<Camera> camera = Game::Instance()->camera;
-	camera->Attach(physicsCamera);
+	camera->Attach(magicWand);
 
-	btRigidBody::btRigidBodyConstructionInfo cameraCI(10,physicsCamera.get(), cameraCyl, inertia);  
+	btRigidBody::btRigidBodyConstructionInfo cameraCI(10,magicWand.get(), cameraCyl, inertia);  
 	btRigidBody * body = new btRigidBody(cameraCI);
-	physicsCamera->SetPhysicsStuff(cameraCyl, body, physicsCamera.get());
+	magicWand->SetPhysicsStuff(cameraCyl, body, magicWand.get());
 	body->setCollisionFlags(body->getCollisionFlags() | btCollisionObject::CF_KINEMATIC_OBJECT);
 	body->setActivationState(DISABLE_DEACTIVATION);
 
 	dynamicsWorld->addRigidBody(body);
-	return physicsCamera;
+	return magicWand;
 }
-
 shared_ptr<PhysicsController> PhysicsFactory::CreateVehicle(glm::vec3 position)
 {
 	float width = 15;

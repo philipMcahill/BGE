@@ -3,6 +3,7 @@
 #include "VectorDrawer.h"
 #include "LazerBeam.h"
 #include "FountainEffect.h"
+#include "Camera.h"
 
 using namespace BGE;
 
@@ -19,6 +20,10 @@ Lab6::~Lab6(void)
 
 bool Lab6::Initialise()
 {	
+
+
+	std::shared_ptr<GameComponent> ground = make_shared<Ground>();
+	Attach(ground);	
 	
 	riftEnabled = false;
 	fullscreen = false;
@@ -36,24 +41,24 @@ bool Lab6::Initialise()
 
 	// Create a gamecomponent and attach the Buddha model
 	// Look at Lab5 for an example of how to do this
-	buddha = make_shared<GameComponent>();
+	/*buddha = make_shared<GameComponent>();
 	buddha->Attach(Content::LoadModel("buddha"));
 	buddha->position = glm::vec3(0,0,0);
 	buddha->scale = glm::vec3(10,10,10);
 	buddha->diffuse = glm::vec3(1.2f, 1.2f, 1.2f);
-	Attach(buddha);
+	Attach(buddha);*/
 
-	buddhaFountain0 = make_shared<FountainEffect>(500);
+	buddhaFountain0 = make_shared<FountainEffect>(100);
 	buddhaFountain0->position = glm::vec3(-30, 0, 0);
 	buddhaFountain0->diffuse = glm::vec3(1,1, 0);
 	Attach(buddhaFountain0);
 
-	buddhaFountain1 = make_shared<FountainEffect>(500);
+	/*buddhaFountain1 = make_shared<FountainEffect>(500);
 	buddhaFountain1->position = glm::vec3(-30, 50, 0);
 	buddhaFountain1->diffuse = glm::vec3(1,1, 0);
-	Attach(buddhaFountain1);
+	Attach(buddhaFountain1);*/
 
-	fountainTheta = 0.0f; 
+	/*fountainTheta = 0.0f; 
 	for (int i = 0 ; i < NUM_FOUNTAINS ; i ++)
 	{
 		fountainTheta = ((glm::pi<float>() * 2.0f) / NUM_FOUNTAINS) * i;
@@ -72,7 +77,7 @@ bool Lab6::Initialise()
 		fountain->position.y = FOUNTAIN_HEIGHT;
 		fountains.push_back(fountain);
 		Attach(fountain);
-	}
+	}*/
 	fountainTheta = 0.0f;
 
 	hud = false;
@@ -80,7 +85,7 @@ bool Lab6::Initialise()
 
 	Game::Initialise();
 
-	camera->GetController()->position = glm::vec3(0, 4, 80);
+	camera->GetController()->position = glm::vec3(10, 4, 5);
 	return true;
 }
 
@@ -88,7 +93,15 @@ bool Lab6::Initialise()
 
 void Lab6::Update(float timeDelta)
 {		
-	for (int i = 0 ; i < fountains.size() ; i ++)
+	
+
+	
+	if (keyState[SDL_SCANCODE_SPACE])
+	{
+		buddhaFountain0 -> position = camera->look;
+	}
+
+	/*for (int i = 0 ; i < fountains.size() ; i ++)
 	{
 		if (i % 2 == 0)
 		{
@@ -105,9 +118,9 @@ void Lab6::Update(float timeDelta)
 	if (fountainTheta >= glm::pi<float>() * 2.0f)
 	{
 		fountainTheta = 0.0f;
-	}
+	}*/
 
-	buddhaFountain0->position.x = glm::sin(fountainTheta) * 30;
+	/*buddhaFountain0->position.x = glm::sin(fountainTheta) * 30;
 	buddhaFountain0->position.z = - glm::cos(fountainTheta) * 30;
 	buddhaFountain0->position.y -= timeDelta * ySpeed;
 	if (buddhaFountain0->position.y > 50)
@@ -135,7 +148,7 @@ void Lab6::Update(float timeDelta)
 	{
 		ySpeed = -ySpeed;
 		buddhaFountain1->position.y = 0;
-	}
+	}*/
 
 
 	Game::Update(timeDelta);

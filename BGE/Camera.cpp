@@ -22,11 +22,13 @@ Camera::~Camera(void)
 
 bool Camera::Initialise()
 {
+
+
 	SDL_WarpMouseInWindow(
 		Game::Instance()->GetMainWindow()
 		,Game::Instance()->GetWidth() / 2
 		,Game::Instance()->GetHeight() / 2);
-	SDL_ShowCursor(SDL_DISABLE); 
+	SDL_ShowCursor(SDL_ENABLE); 
 	return GameComponent::Initialise();
 }
 
@@ -40,6 +42,7 @@ void Camera::Draw()
 void Camera::Update(float timeDelta) {
 	
 	GameComponent::Update(timeDelta);
+
 	view = glm::lookAt(
 		position
 		, position + look
